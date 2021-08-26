@@ -1,0 +1,526 @@
+#examplecontent {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+#overLay{
+  opacity: 0.5; 
+}
+
+#time{
+  color:white;
+  font-size: 300px;
+}
+
+body {
+    background-image: url('images/tourney.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+  html, body {
+      margin: 0; height: 100%; overflow: hidden
+    }
+
+button{
+  border-radius:20px;
+  cursor:pointer;
+  border:none;
+}
+
+button:hover{
+  color: white;
+  background-color: grey;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+button p{
+  padding:3px;
+}
+
+.principal{
+        min-height: 100%; 
+        min-width: 100%;
+    }
+
+.principalSub{
+    display: block;
+    min-width: 50%;
+}
+
+.margleft30{
+  margin-left:30px;
+}
+
+  #divGoku{
+    margin-top:30px;
+    margin-left:80pX
+  }
+
+  .goKuButtonAttack{
+    margin-left:90px;
+    margin-top:20px;
+  }
+
+  #characGoku{
+    width: 30%;
+    animation: MoveUpDown 4s linear infinite;
+    position: relative;
+    
+  }
+
+  
+
+  @keyframes attackRight {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 1000px;    
+      }
+    }
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 20px;
+    }
+  }
+
+
+  #divGohan{
+    margin-top: 220px;
+    margin-left:130px;
+  }
+  #characGohan{
+    width: 20%;
+    animation: MoveLeftRight 1s linear infinite;
+    position: relative;
+  }
+  
+
+  @keyframes MoveLeftRight {
+    0%, 100% {
+      left: 0px;
+    }
+    50% {
+        left: 10px;
+    }
+  }
+
+
+
+  @keyframes attackRight {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 1000px;    
+      }
+    }
+
+
+  #divVegeta{
+    margin-top: 220px;
+    margin-left: 180pX;
+  }
+
+  #characVegeta{
+    width: 28%;
+    animation: MoveRightLeft 1s linear infinite;
+    position: relative;
+    margin-left: 180px;
+  }
+
+
+  @keyframes attackLeft {
+    from {right: 0px;}
+    to {right: 1010px;}
+}
+
+  @keyframes MoveRightLeft {
+    0%, 100% {
+        left: 10px;
+    }
+    50% {
+        left: 0px;
+    }
+  }
+
+  #divTrunks{
+    margin-top: 30px;
+    margin-left: 180pX;
+    padding-top: 50px;
+  }
+  #characTrunks{
+    width: 20%;
+    margin-left: 180pX;
+    animation: MoveDownUp 4s linear infinite;
+    position: relative;
+  }
+
+  .trunksButtonAttack{
+    margin-left:320px;
+    margin-top:20px;
+  }
+  
+
+
+  @keyframes MoveDownUp {
+    0%, 100% {
+      bottom: 20px;
+    }
+    50% {
+      bottom: 0px;
+    }
+  }
+
+
+  @keyframes attackLeftTrunk {
+    from {right: 0px;}
+    to {right: 980px;}
+}
+
+
+
+
+/* Secció attack goku*/
+.slider {
+  position: absolute;
+  cursor: pointer;
+  /* top: 0; */
+  /* left: -135px; */
+  /* right: 0; */
+  /* bottom: 67px; */
+  background-color: white;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+  width: 0;
+  z-index: 21;
+  box-shadow: 1px 1px 25px 25px rgb(108, 250, 255);
+  height: 10px;
+  margin-top: 60px;
+  margin-left: -30px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 0px;
+  bottom: -3px;
+  background-color: white;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+  z-index: 1;
+  box-shadow: 1px 1px 40px 25px rgba(108, 250, 255, 0.904);
+}
+
+input:checked + .slider {
+  /* background-color: white; */
+  width: 950px;
+  transition: 1.4s;
+  /* box-shadow: 1px 1px 40px 25px rgb(108, 250, 255); */
+  height: 22px;
+}
+
+.switch {
+  top: -180px!important;
+  position: relative;
+  display: inline-block;
+  height: 14px;
+  transition: 2s;
+  
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input:focus + .slider {
+  box-shadow: 1px 1px 40px 25px rgb(108, 250, 255);
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(800px);
+-ms-transform: translateX(800px);
+transform: translateX(900px);
+bottom: -25px;
+height: 75px;
+width: 75px;
+left: 0px;
+mix-blend-mode: color-dodge;
+}
+
+/* Gohan Attack*/
+.sliderGohan {
+  position: absolute;
+  cursor: pointer;
+  /* top: 0; */
+  /* left: -135px; */
+  /* right: 0; */
+  /* bottom: 67px; */
+  background-color: white;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+  width: 0;
+  z-index: 21;
+  box-shadow: 1px 1px 25px 25px rgb(255, 204, 108);
+  height: 10px;
+  margin-top: 60px;
+  margin-left: -30px;
+}
+
+.sliderGohan.round {
+  border-radius: 34px;
+}
+
+.sliderGohan.round:before {
+  border-radius: 50%;
+}
+.sliderGohan:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 80px;
+  left: 0px;
+  bottom: -3px;
+  background-color: white;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+  z-index: 1;
+  box-shadow: 1px 1px 40px 25px #FF5233;
+}
+
+input:checked + .sliderGohan {
+  /* background-color: white; */
+  /* width: 850px; */
+  transition: 1.4s;
+  /* box-shadow: 1px 1px 40px 25px rgb(108, 250, 255); */
+  height: 22px;
+}
+
+.switchGohan {
+  top: -160px!important;
+  position: relative;
+  display: inline-block;
+  height: 14px;
+  transition: 2s;
+  margin-left: 40px;
+  
+}
+
+.switchGohan input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input:focus + .sliderGohan {
+  box-shadow: 1px 1px 40px 25px #FF5233;
+}
+
+input:checked + .sliderGohan:before {
+-webkit-transform: translateX(800px);
+-ms-transform: translateX(800px);
+transform: translateX(800px);
+bottom: -25px;
+height: 225px;
+width: 450px;
+left: 0px;
+mix-blend-mode: color-dodge;
+}
+
+
+/* Trunks Attack*/
+.sliderTrunks {
+  position: absolute;
+  cursor: pointer;
+  /* top: 0; */
+  /* left: -135px; */
+  /* right: 0; */
+  /* bottom: 67px; */
+  background-color: white;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+  width: 0;
+  z-index: 21;
+  box-shadow: 1px 1px 25px 25px rgb(255, 204, 108);
+  height: 10px;
+  margin-top: 60px;
+  margin-left: -30px;
+}
+
+.sliderTrunks.round {
+  border-radius: 34px;
+}
+
+.sliderTrunks.round:before {
+  border-radius: 50%;
+}
+.sliderTrunks:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 80px;
+  left: 0px;
+  bottom: -3px;
+  background-color: white;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+  z-index: 1;
+  box-shadow: 1px 1px 40px 25px #DDFF33;
+}
+
+input:checked + .sliderTrunks {
+  /* background-color: white; */
+  /* width: 850px; */
+  transition: 1.4s;
+  /* box-shadow: 1px 1px 40px 25px rgb(108, 250, 255); */
+  height: 22px;
+}
+
+.switchTrunks {
+  top: -160px!important;
+  position: relative;
+  display: inline-block;
+  height: 14px;
+  transition: 2s;
+  margin-left: 40px;
+  
+}
+
+.switchTrunks input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input:focus + .sliderTrunks {
+  box-shadow: 1px 1px 40px 25px #DDFF33;
+}
+
+input:checked + .sliderTrunks:before {
+transform: translate(-1200px,100px);
+/* transform: translatey(200px); */
+bottom: -25px;
+height: 225px;
+width: 450px;
+left: 0px;
+mix-blend-mode: color-dodge;
+}
+
+
+
+/* Vegeta Attack*/
+.sliderVegeta {
+  position: absolute;
+  cursor: pointer;
+  /* top: 0; */
+  /* left: -135px; */
+  /* right: 0; */
+  /* bottom: 67px; */
+  background-color: white;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+  width: 0;
+  z-index: 21;
+  box-shadow: 1px 1px 25px 25px #7733FF;
+  height: 10px;
+  margin-top: 60px;
+  margin-left: -30px;
+  
+}
+
+.sliderVegeta.round {
+  border-radius: 34px;
+}
+
+.sliderVegeta.round:before {
+  border-radius: 50%;
+}
+.sliderVegeta:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: -3px;
+  background-color: white;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+  z-index: 1;
+  box-shadow: 1px 1px 40px 25px #7733FF;
+  height: 35px;
+    width: 33px;
+}
+
+input:checked + .sliderVegeta {
+  /* background-color: white; */
+  /* width: 850px; */
+  transition: 1.4s;
+  /* box-shadow: 1px 1px 40px 25px rgb(108, 250, 255); */
+  height: 22px;
+}
+
+.switchVegeta {
+  top: -160px!important;
+  position: relative;
+  display: inline-block;
+  height: 14px;
+  transition: 2s;
+  margin-left: 40px;
+  
+}
+
+.switchVegeta2 {
+  top: -160px!important;
+  position: relative;
+  display: inline-block;
+  height: 14px;
+  transition: 2s;
+  margin-left: 40px;
+  
+}
+
+.switchVegeta input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input:focus + .sliderVegeta {
+  box-shadow: 1px 1px 40px 25px #7733FF;
+}
+
+input:checked + .sliderVegeta:before {
+transform: translate(-1200px,100px);
+/* transform: translatey(200px); */
+bottom: 80px;
+height: 50px;
+width: 30px;
+left: 0px;
+mix-blend-mode: color-dodge;
+}
+
+.vegetaInput{
+  display:none
+}

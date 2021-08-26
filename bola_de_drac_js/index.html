@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+</head>
+<body id="body">
+
+    <audio controls style="display:none" id="audio">
+        <source src="audio/cancion.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+    <div id="examplecontent"></div>
+    
+    <div class="principal" style="display:inline-flex">
+
+        <div class="principalSub">
+
+            <div id="divGoku">
+                <img id="characGoku" src="images/goku.png" height="" alt="">
+                <label class="switch move" id="slight-move">
+                    <input id="myCheck" type="checkbox">
+                    <span  id="myCheck" class="slider round" onclick="myFunction()"></span>
+                  </label>
+            </div>
+            <button onclick="gokuMoviment()" id="goKuButtonAttack" class="goKuButtonAttack"><p>Moviment</p></button>
+            <button onclick="gokuAttack()" class="margleft30"><p>Atacar</p></button>
+
+            <div id="divGohan">
+                <img id="characGohan" src="images/gohan.png" height="" alt="">
+                <label class="switchGohan moveGohan" id="slight-move">
+                    <input id="myCheck2" class="gokuInput" type="checkbox">
+                    <span  id="myCheck2" class="sliderGohan round" onclick="myFunction()"></span>
+                  </label>
+            </div>
+            
+            <button onclick="gohanMoviment()" class="goKuButtonAttack"><p>Moviment</p></button>
+            <button  onclick="gohanAttack()" class="margleft30"><p>Atacar</p></button>
+            
+        </div>
+       
+    <div class="principalSub">
+        <div id="divTrunks">
+            <img id="characTrunks" src="images/trunks.png" height="" alt="">
+            <label class="switch move" id="slight-move">
+                <input id="myCheckTrunks"  class="gokuInput" type="checkbox">
+                <span  id="myCheckTrunks" class="sliderTrunks round" onclick="myFunction()"></span>
+              </label>
+        </div>
+        <button onclick="trunksMoviment()"  class="trunksButtonAttack"><p>Moviment</p></button>
+        <button onclick="trunksAttack()"  class="margleft30"><p>Atacar</p></button>
+
+        <div id="divVegeta">
+            <img id="characVegeta" src="images/vegeta.png" height="" alt="">
+            <label class="switchVegeta moveVegeta" id="slight-move">
+                <input id="myCheckVegeta" class="gokuInput" type="checkbox">
+                <span  id="myCheckVegeta" class="sliderVegeta round" onclick="myFunction()"></span>
+              </label>
+               <label class="switchVegeta2 moveVegeta" id="slight-move">
+                <input id="myCheckVegeta3" class="vegetaInput" type="checkbox">
+                <span  id="myCheckVegeta3" class="sliderVegeta round" onclick="myFunction()"></span>
+              </label>    
+        </div>
+         <button onclick="vegetaMoviment()" class="trunksButtonAttack"><p>Moviment</p></button>
+         <button onclick="vegetaAttack()" class="margleft30"><p>Atacar</p></button>
+    </div>
+    </div>
+
+</body>
+</html>
