@@ -1,6 +1,6 @@
 # Dragonball-Animation
 html/css/javascript Dragon Ball animation
 
+## Manual   📋
 
-Animación con html / css / Javascript de DragonBall
-
+Open index.html and enjoy!
