@@ -1,8 +1,8 @@
 # Dragonball-Animation
 
 
-## Build by 🛠️
-html - css - javascript 
+## Build  🛠️
+HTML - CSS - Javascript 
 
 ## Manual   📋
 
